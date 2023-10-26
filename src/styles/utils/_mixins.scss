@@ -16,16 +16,3 @@
     @content;
   }
 }
-
-@mixin pageGrid {
-  display: grid;
-  grid-template-columns: 2;
-
-  @include onTablet {
-    grid-template-columns: 6;
-  }
-
-  @include onDesktop() {
-    grid-template-columns: 12;
-  }
-}
