@@ -1,0 +1,31 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin pageGrid {
+  display: grid;
+  grid-template-columns: 2;
+
+  @include onTablet {
+    grid-template-columns: 6;
+  }
+
+  @include onDesktop() {
+    grid-template-columns: 12;
+  }
+}
