@@ -55,23 +55,27 @@
     </div>
     <div class="header__slideshow">
       <div class="slide slide__fade">
-        <div class="slide__number">1 / 3</div>
         <img src="images/header-photos/unsplash_kYRp0In93b4.png" alt="man on horse" class="slide__image">
       </div>
 
       <div class="slide slide__fade">
-        <div class="slide__number">2 / 3</div>
         <img src="images/header-photos/unsplash_B0kFposz5JU.png" alt="couple on horses" class="slide__image">
       </div>
 
       <div class="slide slide__fade">
-        <div class="slide__number">3 / 3</div>
         <img src="images/header-photos/show-jumping-height.jpg" alt="show jumping" class="slide__image">
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div style="text-align:center">
+        <span class="dot dot1" onclick="currentSlide(1)"></span>
+        <span class="dot dot2" onclick="currentSlide(2)"></span>
+        <span class="dot dot3" onclick="currentSlide(3)"></span>
+      </div>
     </div>
+    
 
   </header>
 
