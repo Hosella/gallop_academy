@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+  height: 893px;
+  background-color: $header-bg-color;
+  border-end-start-radius: 100px;
+  @include onDesktop {
+    height: 800px;
+  }
+
+  
+  &__slideshow {
+    width: 100%;
+    height: 390px;
+    margin: 0;
+    border-end-start-radius: 100px;
+    position: absolute;
+    bottom: 0;
+
+    @include onTablet {
+      height: 360px;
+    }
+
+    @include onDesktop {
+      height: 85%;
+      width: 50%;
+      left: 50%;
+      right: 0;
+    }
+  }
+}
+
+.slide {
+  display: none;
+
+  &__number {
+    color: $white-page-color;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
+
+  &__fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-end-start-radius: 100px;
+    position: absolute;
+
+    @include onTablet {
+    object-position: 0 -150px;
+    }
+
+    @include onDesktop {
+    object-position: center;
+    }
+  }
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: $brown-color;
+}

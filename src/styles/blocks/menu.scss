@@ -1,0 +1,48 @@
+.page__menu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+
+  &:target {
+    visibility: visible;
+  }
+}
+
+.menu {
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+  background-color: $brown-color;
+
+  &__top {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__icon {
+    display: block;
+    background-image: url(../images/icons/close.png);
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: $white-page-color;
+
+    &:hover {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $main-text-color;
+    }
+  }
+}

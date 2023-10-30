@@ -1,0 +1,72 @@
+.top {
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__images {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+  
+    &__logo {
+      display: flex;
+      margin: 20px 0;
+      height: 28px;
+
+      @include onDesktop {
+        height: 40px;
+      }
+    }
+    
+    &__icon {
+      background-image: url(../images/icons/menu.png);
+      
+      @include onDesktop {
+        display: none;
+      }
+    }
+  
+    &__contact-us {
+      display: block;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 19.5px;
+      text-transform: uppercase;
+      color: $main-text-color;
+      text-decoration: none;
+      border-bottom: 2px solid $brown-color;
+      padding-bottom: 8px;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 19.5px;
+      text-transform: uppercase;
+
+      &:hover {
+        border-bottom: 2px solid $brown-color;
+        padding-bottom: 8px;
+      }
+    }
+  }
