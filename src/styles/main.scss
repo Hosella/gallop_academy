@@ -2,6 +2,45 @@
 @import "fonts";
 @import "typography";
 
+@import 'blocks/header.scss';
+@import 'blocks/header-top.scss';
+@import 'blocks/header-bottom.scss';
+@import 'blocks/menu.scss';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: $c-gray;
+  margin: 0;
+  background: $white-page-color;
+  font-family: 'Merriweather';
+  color: $main-text-color;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  height: min-content;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 0;
+
+  @include onTablet {
+    padding: 41px;
+    padding-bottom: 0;
+  }
+
+  @include onDesktop {
+    padding: 54px;
+    padding-bottom: 0;
+  }
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
 }
