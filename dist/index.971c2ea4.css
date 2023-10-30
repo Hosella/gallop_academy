@@ -72,15 +72,6 @@ h1 {
   display: none;
 }
 
-.slide__number {
-  color: #fff4e6;
-  z-index: 1;
-  padding: 8px 12px;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-}
-
 .slide__fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -104,6 +95,7 @@ h1 {
 @media (width >= 1024px) {
   .slide__image {
     object-position: center;
+    border-top-left-radius: 100px;
   }
 }
 
@@ -138,6 +130,53 @@ h1 {
 
 .prev:hover, .next:hover {
   background-color: #7b5443;
+}
+
+.dot {
+  z-index: 1;
+  cursor: pointer;
+  background-color: #bbb;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: background-color .6s;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+}
+
+.dot1 {
+  left: 43%;
+}
+
+@media (width >= 640px) {
+  .dot1 {
+    left: 45%;
+  }
+}
+
+.dot2 {
+  left: 50%;
+}
+
+@media (width >= 640px) {
+  .dot2 {
+    left: 50%;
+  }
+}
+
+.dot3 {
+  left: 57%;
+}
+
+@media (width >= 640px) {
+  .dot3 {
+    left: 55%;
+  }
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 .top {
@@ -347,7 +386,7 @@ h1 {
 
 .bottom__button:hover {
   background-color: #6e4b3c;
-  box-shadow: 3px 3px 5px #000;
+  box-shadow: 1px 1px 40px #777;
 }
 
 .page__menu {
@@ -397,13 +436,6 @@ h1 {
 .menu__link:hover {
   border-bottom: 2px solid #2c2e2d;
   padding-bottom: 8px;
-}
-
-.about-us {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 * {
