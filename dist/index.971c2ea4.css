@@ -183,7 +183,20 @@ h1 {
   justify-content: space-between;
   align-items: center;
   height: 46px;
+  padding-top: 20px;
   display: flex;
+}
+
+@media (width >= 640px) {
+  .top {
+    padding-top: 41px;
+  }
+}
+
+@media (width >= 1024px) {
+  .top {
+    padding-top: 54px;
+  }
 }
 
 .top__images {
@@ -438,6 +451,70 @@ h1 {
   padding-bottom: 8px;
 }
 
+.about-us {
+  --columns: 2;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 20px;
+  padding-block: 120px;
+  display: grid;
+}
+
+@media (width >= 640px) {
+  .about-us {
+    --columns: 6;
+    column-gap: 24px;
+  }
+}
+
+@media (width >= 1024px) {
+  .about-us {
+    --columns: 12;
+  }
+}
+
+@media (width >= 640px) {
+  .about-us {
+    padding-block: 148px;
+  }
+}
+
+.about-us__texts {
+  grid-column: 1 / -1;
+}
+
+@media (width >= 1024px) {
+  .about-us__texts {
+    grid-column: 2 / -2;
+  }
+}
+
+.about-us__title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: Zilla Slab;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+@media (width >= 640px) {
+  .about-us__title {
+    margin-bottom: 16px;
+  }
+}
+
+.about-us__text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@media (width >= 640px) {
+  .about-us__text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -457,18 +534,20 @@ a {
 }
 
 .container {
-  padding: 20px 20px 0;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (width >= 640px) {
   .container {
-    padding: 41px 41px 0;
+    padding: 0 41px;
   }
 }
 
 @media (width >= 1024px) {
   .container {
-    padding: 54px 54px 0;
+    padding: 0 54px;
   }
 }
 
