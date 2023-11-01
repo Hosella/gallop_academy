@@ -6,6 +6,8 @@
 @import 'blocks/header-top.scss';
 @import 'blocks/header-bottom.scss';
 @import 'blocks/menu.scss';
+@import 'blocks/about-us.scss';
+
 
 * {
   box-sizing: border-box;
@@ -27,16 +29,16 @@ a {
 
 .container {
   padding: 20px;
-  padding-bottom: 0;
+  padding-block: 0;
 
   @include onTablet {
     padding: 41px;
-    padding-bottom: 0;
+    padding-block: 0;
   }
 
   @include onDesktop {
     padding: 54px;
-    padding-bottom: 0;
+    padding-block: 0;
   }
 }
 

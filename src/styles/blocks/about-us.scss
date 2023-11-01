@@ -1,0 +1,35 @@
+.about-us {
+  @include pageGrid;
+  padding-block: 120px;
+
+  @include onTablet {
+    padding-block: 148px;
+  }
+
+  &__texts {
+    grid-column: 1 / -1;
+  
+    @include onDesktop {
+      grid-column: 2 / -2;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include onTablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+
+    @include onTablet {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

@@ -1,4 +1,47 @@
+%h {
+  font-family: 'Zilla Slab';
+  margin: 0;
+  font-weight: 600;
+}
+
 %h1 {
-  font-family: "Roboto", sans-serif;
+  @include onTablet {
+    font-size: 64px;
+    line-height: 68px;
+  }
+}
+
+%h2 {
+  font-size: 44px;
+  line-height: 52.8px;
+  text-align: center;
+
+  @include onTablet {
+    font-size: 52px;
+    line-height: 78px;
+  }
+}
+
+%h3 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+}
+
+%h4 {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+%p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+%p2 {
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }

@@ -30,10 +30,7 @@
   }
   
   &__title {
-    font-family: 'Zilla Slab';
-    margin: 0;
     padding-top: 48px;
-    font-weight: 600;
     grid-column: 1 / -1;
     
     @include onTablet {
