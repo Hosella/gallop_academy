@@ -1,0 +1,103 @@
+.our-teachers {
+  @include pageGrid;
+
+  &__texts {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @extend %p;
+    text-align: center;
+  }
+
+  &__teachers {
+    border-radius: 16px;
+    grid-column: 1 / -1;
+    @include pageGrid;
+    row-gap: 24px;
+
+    @include onTablet {
+      row-gap: 30px;
+    }
+  }
+}
+
+.teacher {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $pink-page-color;
+  border-radius: 16px;
+  grid-column: 1 / -1;
+
+  @include onDesktop {
+    grid-column: span 4;
+  }
+
+  &__photo-wraper {
+    margin-block: 75px;
+    position: relative;
+    transform: scale(1);
+    z-index: 1111;
+
+    &::before {
+      content: '';
+      height: 50px;
+      width: 50px;
+      border: 5px solid $brown-color;
+      border-radius: 50%;
+      position: absolute;
+      top: -15px;
+      left: -5px;
+      z-index: -1;
+      transition: 0.7s;
+      }
+
+    &:hover::before {
+      left: 75px;
+      border-color: $header-bg-color;
+    }
+
+    &::after {
+      content: '';
+      height: 50px;
+      width: 50px;
+      border: 5px solid $header-bg-color;
+      border-radius: 50%;
+      position: absolute;
+      top: 60px;
+      left: 75px;
+      z-index: -1;
+      transition: 0.5s;
+
+      @include onTablet {
+        top: 100px;
+      }
+      }
+
+    &:hover::after {
+      left: -5px;
+      border-color: $brown-color;
+    }
+  }
+
+  &__photo {
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    object-position: center -1px;
+    border-radius: 50%;
+
+    @include onTablet {
+      height: 140px;
+      width: 140px;
+    }
+  }
+
+  &__achievements {
+    @extend %p2;
+    margin: 20px 70px 40px;
+  }
+}
