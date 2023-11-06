@@ -1,13 +1,16 @@
-.classes {
-  @include pageGrid;
-  position: relative;
-  margin-top: 90px;
-  row-gap: 24px;
+.classes-wrapper {
+  margin-top: 70px;
   margin-bottom: 50px;
-
+  
   @include onTablet {
     margin-bottom: 180px;
   }
+}
+
+.classes {
+  @include pageGrid;
+  position: relative;
+  row-gap: 24px;
 }
 
 .class {
