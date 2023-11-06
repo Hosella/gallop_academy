@@ -3,12 +3,32 @@
 @import "typography";
 
 @import 'blocks/header.scss';
+@import 'blocks/top.scss';
 @import 'blocks/header-top.scss';
 @import 'blocks/header-bottom.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/about-us.scss';
 @import 'blocks/teachers.scss';
+@import 'blocks/classes.scss';
+@import 'blocks/map.scss';
 
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background:$white-page-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $pink-page-color;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1b3ad;
+}
 
 * {
   box-sizing: border-box;
@@ -22,6 +42,10 @@ body {
   color: $main-text-color;
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
 a {
   padding: 0;
   margin: 0;
@@ -31,6 +55,8 @@ a {
 .container {
   padding: 20px;
   padding-block: 0;
+  max-width: 1240px;
+  margin: 0 auto;
 
   @include onTablet {
     padding: 41px;
@@ -41,9 +67,4 @@ a {
     padding: 54px;
     padding-block: 0;
   }
-}
-
-.icon {
-  height: 24px;
-  width: 24px;
 }

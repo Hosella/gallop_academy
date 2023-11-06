@@ -4,10 +4,13 @@
   top: 0;
   left: 0;
   right: 0;
-  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all $transition;
+  opacity: 0.3;
 
-  &:target {
-    visibility: visible;
+  &--open {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -16,16 +19,6 @@
   margin: 0;
   padding: 0;
   background-color: $brown-color;
-
-  &__top {
-    display: flex;
-    justify-content: end;
-  }
-
-  &__icon {
-    display: block;
-    background-image: url(../images/icons/close.png);
-  }
   
   &__list {
     display: flex;
@@ -33,7 +26,8 @@
     gap: 32px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    margin-top: 55px;
+    padding: 5px;
   }
   
   &__link {
@@ -41,8 +35,7 @@
     color: $white-page-color;
 
     &:hover {
-      padding-bottom: 8px;
-      border-bottom: 2px solid $main-text-color;
+      font-weight: bold;
     }
   }
 }

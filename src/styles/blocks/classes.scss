@@ -1,0 +1,181 @@
+.classes {
+  @include pageGrid;
+  position: relative;
+  margin-top: 90px;
+  row-gap: 24px;
+  margin-bottom: 50px;
+
+  @include onTablet {
+    margin-bottom: 180px;
+  }
+}
+
+.class {
+  height: 264px;
+  background-size: cover;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  transform: scale(1.1);
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1);
+    transition: $transition;
+  }
+}
+
+.classes {
+  &__title {
+    grid-column: 1 / -1;
+  
+    @include onDesktop {
+      grid-column: 1 / 7;
+      text-align: center;
+      transform: translateY(300px);
+    }
+  }
+  
+  &__text {
+    @extend %p2;
+    grid-column: 1 / -1;
+  
+    @include onTablet {
+      grid-column: 1 / 4;
+      position: absolute;
+      top: 100px;
+    }
+  
+    @include onDesktop {
+      grid-column: 2 / 6;
+      text-align: center;
+      transform: translateY(300px);
+    }
+  }
+  
+  &__for-beginners-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+    
+    @include onDesktop {
+      grid-column: 7 / 10;
+    }
+
+    @include onTablet {
+      transform: translateY(50%);
+    }
+  }
+
+  &__for-beginners {
+    background-image: url(../images/classes/for-beginners.jpg);
+    background-position: center;
+  }
+
+  &__dressage-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: 10 / -1;
+    }
+  }
+  
+  &__dressage {
+    background-image: url(../images/classes/dressage.jpg);
+    background-position: center -10px;
+  }
+
+  &__eventing-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onTablet {
+      transform: translateY(50%);
+    }
+  
+    @include onDesktop {
+      grid-column: 7 / 10;
+    }
+  }
+  
+  &__eventing {
+    background-image: url(../images/classes/eventing.jpg);
+    background-position: center;
+  }
+  
+  &__show-jumping-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: 10 / -1;
+    }
+  }
+
+  &__show-jumping {
+    background-image: url(../images/classes/show-jumping.jpg);
+    background-position: center -10px;
+  }
+  
+  &__content {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+  
+    &::before {
+      content: '';
+      display: block;
+      height: 35px;
+      width: 35px;
+      border-radius: 8px;
+      background-color: $header-bg-color;
+      background-image: url(../images/icons/vector.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      box-shadow: 2px 2px 1px $main-text-color;
+      transition: $transition;
+      
+    }
+  
+    &:hover::before {
+      width: 45px;
+      transition: $transition;
+    }
+  }
+  
+  &__name {
+    color: $white-page-color;
+    text-shadow: 2px 2px 1px $main-text-color;
+    font-size: 22px;
+  }
+}
