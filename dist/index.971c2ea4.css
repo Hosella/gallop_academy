@@ -666,7 +666,7 @@ h4 {
 
 .teacher {
   background-color: #fff4e6;
-  border: 2px solid #b8b17b;
+  border: 3px solid #b8b17b;
   border-radius: 16px;
   flex-direction: column;
   grid-column: 1 / -1;
@@ -760,7 +760,7 @@ h4 {
 }
 
 .classes-wrapper {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -994,12 +994,12 @@ h4 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ebc6c3;
+  background: #7b5443;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f1b3ad;
+  background: #6d4a3b;
 }
 
 * {
