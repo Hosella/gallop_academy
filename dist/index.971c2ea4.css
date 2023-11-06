@@ -792,6 +792,7 @@ h4 {
 }
 
 .class {
+  background-position: center;
   background-size: cover;
   grid-column: 1 / -1;
   justify-content: start;
@@ -866,7 +867,6 @@ h4 {
 
 .classes__for-beginners {
   background-image: url("for-beginners.006c6168.jpg");
-  background-position: center;
 }
 
 .classes__dressage-wrapper {
@@ -890,7 +890,6 @@ h4 {
 
 .classes__dressage {
   background-image: url("dressage.9e0a1646.jpg");
-  background-position: 50% -10px;
 }
 
 .classes__eventing-wrapper {
@@ -915,7 +914,6 @@ h4 {
 
 .classes__eventing {
   background-image: url("eventing.1ec23c22.jpg");
-  background-position: center;
 }
 
 .classes__show-jumping-wrapper {
@@ -939,10 +937,10 @@ h4 {
 
 .classes__show-jumping {
   background-image: url("show-jumping.b170b464.jpg");
-  background-position: 50% -10px;
 }
 
 .classes__content {
+  z-index: 1000;
   align-items: center;
   gap: 16px;
   text-decoration: none;
@@ -970,6 +968,10 @@ h4 {
 .classes__content:hover:before {
   width: 45px;
   transition: all .4s;
+}
+
+.classes__content:hover ~ .class {
+  transform: scale(1);
 }
 
 .classes__name {
