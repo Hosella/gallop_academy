@@ -1,7 +1,7 @@
 .bottom {
   display: flex;
   flex-direction: column;
-  // row-gap: 72px;
+  row-gap: 42px;
 
   @include onTablet {
     row-gap: 56px;

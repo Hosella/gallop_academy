@@ -1,11 +1,13 @@
 .about-us {
-  @include pageGrid;
   padding-block: 120px;
-
+  
   @include onTablet {
     padding-block: 148px;
   }
+}
 
+.about-us__container {
+  @include pageGrid;
   &__texts {
     grid-column: 1 / -1;
   

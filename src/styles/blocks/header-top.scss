@@ -1,43 +1,4 @@
 .top {
-    display: flex;
-    height: 46px;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-
-    @include onTablet {
-      padding-top: 41px;
-    }
-  
-    @include onDesktop {
-      padding-top: 54px;
-    }
-
-
-    &__images {
-      display: flex;
-      gap: 32px;
-      align-items: center;
-    }
-  
-    &__logo {
-      display: flex;
-      margin: 20px 0;
-      height: 28px;
-
-      @include onDesktop {
-        height: 40px;
-      }
-    }
-    
-    &__icon {
-      background-image: url(../images/icons/menu.png);
-      
-      @include onDesktop {
-        display: none;
-      }
-    }
-  
     &__contact-us {
       display: block;
       font-weight: 700;
