@@ -36,13 +36,13 @@ h4 {
   line-height: 28px;
 }
 
-.our-teachers__text {
+.our-teachers__container__text {
   font-size: 15px;
   font-weight: 600;
   line-height: 19.5px;
 }
 
-.classes__text, .teacher__achievements {
+.classes__container__text, .teacher__achievements {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -539,17 +539,17 @@ h4 {
   font-weight: bold;
 }
 
-.about-us-wrapper {
+.about-us {
   padding-block: 120px;
 }
 
 @media (width >= 640px) {
-  .about-us-wrapper {
+  .about-us {
     padding-block: 148px;
   }
 }
 
-.about-us {
+.about-us__container {
   --columns: 2;
   grid-template-columns: repeat(var(--columns), 1fr);
   column-gap: 20px;
@@ -557,57 +557,57 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .about-us {
+  .about-us__container {
     --columns: 6;
     column-gap: 24px;
   }
 }
 
 @media (width >= 1024px) {
-  .about-us {
+  .about-us__container {
     --columns: 12;
   }
 }
 
-.about-us__texts {
+.about-us__container__texts {
   grid-column: 1 / -1;
 }
 
 @media (width >= 1024px) {
-  .about-us__texts {
+  .about-us__container__texts {
     grid-column: 2 / -2;
   }
 }
 
-.about-us__title {
+.about-us__container__title {
   margin-bottom: 24px;
 }
 
 @media (width >= 640px) {
-  .about-us__title {
+  .about-us__container__title {
     margin-bottom: 16px;
   }
 }
 
-.about-us__text {
+.about-us__container__text {
   text-align: center;
   font-size: 22px;
   line-height: 33px;
 }
 
 @media (width >= 640px) {
-  .about-us__text {
+  .about-us__container__text {
     font-size: 24px;
     line-height: 36px;
   }
 }
 
-.our-teachers-wrapper {
+.our-teachers {
   background-color: #ebc6c3;
   padding-block: 30px;
 }
 
-.our-teachers {
+.our-teachers__container {
   --columns: 2;
   grid-template-columns: repeat(var(--columns), 1fr);
   column-gap: 20px;
@@ -615,28 +615,28 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .our-teachers {
+  .our-teachers__container {
     --columns: 6;
     column-gap: 24px;
   }
 }
 
 @media (width >= 1024px) {
-  .our-teachers {
+  .our-teachers__container {
     --columns: 12;
   }
 }
 
-.our-teachers__texts {
+.our-teachers__container__texts {
   grid-column: 1 / -1;
   margin-bottom: 20px;
 }
 
-.our-teachers__text {
+.our-teachers__container__text {
   text-align: center;
 }
 
-.our-teachers__teachers {
+.our-teachers__container__teachers {
   --columns: 2;
   grid-column: 1 / -1;
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -646,20 +646,20 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .our-teachers__teachers {
+  .our-teachers__container__teachers {
     --columns: 6;
     column-gap: 24px;
   }
 }
 
 @media (width >= 1024px) {
-  .our-teachers__teachers {
+  .our-teachers__container__teachers {
     --columns: 12;
   }
 }
 
 @media (width >= 640px) {
-  .our-teachers__teachers {
+  .our-teachers__container__teachers {
     row-gap: 30px;
   }
 }
@@ -759,18 +759,18 @@ h4 {
   margin: 20px 70px 40px;
 }
 
-.classes-wrapper {
+.classes {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 @media (width >= 640px) {
-  .classes-wrapper {
+  .classes {
     margin-bottom: 180px;
   }
 }
 
-.classes {
+.classes__container {
   --columns: 2;
   grid-template-columns: repeat(var(--columns), 1fr);
   gap: 24px 20px;
@@ -779,14 +779,14 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .classes {
+  .classes__container {
     --columns: 6;
     column-gap: 24px;
   }
 }
 
 @media (width >= 1024px) {
-  .classes {
+  .classes__container {
     --columns: 12;
   }
 }
@@ -808,24 +808,24 @@ h4 {
   transform: scale(1);
 }
 
-.classes__title {
+.classes__container__title {
   grid-column: 1 / -1;
 }
 
 @media (width >= 1024px) {
-  .classes__title {
+  .classes__container__title {
     text-align: center;
     grid-column: 1 / 7;
     transform: translateY(300px);
   }
 }
 
-.classes__text {
+.classes__container__text {
   grid-column: 1 / -1;
 }
 
 @media (width >= 640px) {
-  .classes__text {
+  .classes__container__text {
     grid-column: 1 / 4;
     position: absolute;
     top: 100px;
@@ -833,14 +833,14 @@ h4 {
 }
 
 @media (width >= 1024px) {
-  .classes__text {
+  .classes__container__text {
     text-align: center;
     grid-column: 2 / 6;
     transform: translateY(300px);
   }
 }
 
-.classes__for-beginners-wrapper {
+.classes__container__for-beginners-wrapper {
   border-radius: 16px;
   grid-column: 1 / -1;
   position: relative;
@@ -848,28 +848,28 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .classes__for-beginners-wrapper {
+  .classes__container__for-beginners-wrapper {
     grid-column: span 3;
   }
 }
 
 @media (width >= 1024px) {
-  .classes__for-beginners-wrapper {
+  .classes__container__for-beginners-wrapper {
     grid-column: 7 / 10;
   }
 }
 
 @media (width >= 640px) {
-  .classes__for-beginners-wrapper {
+  .classes__container__for-beginners-wrapper {
     transform: translateY(50%);
   }
 }
 
-.classes__for-beginners {
+.classes__container__for-beginners {
   background-image: url("for-beginners.006c6168.jpg");
 }
 
-.classes__dressage-wrapper {
+.classes__container__dressage-wrapper {
   border-radius: 16px;
   grid-column: 1 / -1;
   position: relative;
@@ -877,22 +877,22 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .classes__dressage-wrapper {
+  .classes__container__dressage-wrapper {
     grid-column: span 3;
   }
 }
 
 @media (width >= 1024px) {
-  .classes__dressage-wrapper {
+  .classes__container__dressage-wrapper {
     grid-column: 10 / -1;
   }
 }
 
-.classes__dressage {
+.classes__container__dressage {
   background-image: url("dressage.9e0a1646.jpg");
 }
 
-.classes__eventing-wrapper {
+.classes__container__eventing-wrapper {
   border-radius: 16px;
   grid-column: 1 / -1;
   position: relative;
@@ -900,23 +900,23 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .classes__eventing-wrapper {
+  .classes__container__eventing-wrapper {
     grid-column: span 3;
     transform: translateY(50%);
   }
 }
 
 @media (width >= 1024px) {
-  .classes__eventing-wrapper {
+  .classes__container__eventing-wrapper {
     grid-column: 7 / 10;
   }
 }
 
-.classes__eventing {
+.classes__container__eventing {
   background-image: url("eventing.1ec23c22.jpg");
 }
 
-.classes__show-jumping-wrapper {
+.classes__container__show-jumping-wrapper {
   border-radius: 16px;
   grid-column: 1 / -1;
   position: relative;
@@ -924,22 +924,22 @@ h4 {
 }
 
 @media (width >= 640px) {
-  .classes__show-jumping-wrapper {
+  .classes__container__show-jumping-wrapper {
     grid-column: span 3;
   }
 }
 
 @media (width >= 1024px) {
-  .classes__show-jumping-wrapper {
+  .classes__container__show-jumping-wrapper {
     grid-column: 10 / -1;
   }
 }
 
-.classes__show-jumping {
+.classes__container__show-jumping {
   background-image: url("show-jumping.b170b464.jpg");
 }
 
-.classes__content {
+.classes__container__content {
   z-index: 1000;
   align-items: center;
   gap: 16px;
@@ -950,7 +950,7 @@ h4 {
   left: 20px;
 }
 
-.classes__content:before {
+.classes__container__content:before {
   content: "";
   background-color: #b8b17b;
   background-image: url("vector.44098a3b.svg");
@@ -965,16 +965,16 @@ h4 {
   box-shadow: 2px 2px 1px #2c2e2d;
 }
 
-.classes__content:hover:before {
+.classes__container__content:hover:before {
   width: 45px;
   transition: all .4s;
 }
 
-.classes__content:hover ~ .class {
+.classes__container__content:hover ~ .class {
   transform: scale(1);
 }
 
-.classes__name {
+.classes__container__name {
   color: #fff4e6;
   text-shadow: 2px 2px 1px #2c2e2d;
   font-size: 22px;

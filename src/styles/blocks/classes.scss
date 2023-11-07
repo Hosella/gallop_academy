@@ -1,4 +1,4 @@
-.classes-wrapper {
+.classes {
   margin-top: 50px;
   margin-bottom: 50px;
   
@@ -7,7 +7,7 @@
   }
 }
 
-.classes {
+.classes__container {
   @include pageGrid;
   position: relative;
   row-gap: 24px;
@@ -30,7 +30,7 @@
   }
 }
 
-.classes {
+.classes__container {
   &__title {
     grid-column: 1 / -1;
   

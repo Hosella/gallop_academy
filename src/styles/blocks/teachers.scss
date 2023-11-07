@@ -1,9 +1,9 @@
-.our-teachers-wrapper {
+.our-teachers {
   background-color: $pink-page-color;
   padding-block: 30px;
 }
 
-.our-teachers {
+.our-teachers__container {
   @include pageGrid;
 
   &__texts {

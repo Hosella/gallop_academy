@@ -1,4 +1,4 @@
-.about-us-wrapper {
+.about-us {
   padding-block: 120px;
   
   @include onTablet {
@@ -6,7 +6,7 @@
   }
 }
 
-.about-us {
+.about-us__container {
   @include pageGrid;
   &__texts {
     grid-column: 1 / -1;
