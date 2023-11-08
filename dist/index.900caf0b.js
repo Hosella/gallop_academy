@@ -40,6 +40,8 @@ const links = document.querySelectorAll(".menu__link") || [];
 links?.forEach((link)=>{
     link.addEventListener("click", ()=>{
         body.classList.remove("body-hidden");
+        menu.classList.remove("page__menu--open");
+        nav_icon.classList.remove("open");
     });
 });
 

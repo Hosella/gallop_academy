@@ -1,0 +1,146 @@
+.contact-us {
+  grid-column: 1 / -1;
+  margin-block: 80px;
+
+  @include onTablet {
+    grid-column: 1 / 5;
+  }
+
+  @include onDesktop {
+    grid-column: 8 / -1;
+    margin-block: 50px;
+  }
+
+  &__title {
+    text-align: left;
+    color: $white-page-color;
+
+    @include onDesktop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__paragraph {
+    color: $white-page-color;
+    margin: 0;
+    margin-top: 15px;
+    opacity: 0.7;
+
+    @include onDesktop {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__phone-number {
+    text-decoration: none;
+    color: $white-page-color;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      height: 1px;
+      width: 100%;
+      background-color: $white-page-color;
+      transition: 0.3s;
+      transform: scale(0);
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
+  &__socials {
+    position: relative;
+    height: 30px;
+
+    &__icons {
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      left: 0;
+
+      @include onDesktop {
+        top: 80%
+      }
+
+      &__icon {
+        background: $brown-color;
+        border-radius:4px;
+        text-align:center;
+        text-decoration:none;
+        font-family:fontawesome;
+        position: relative;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-size: contain;
+        padding-top:12px;
+        margin-right: 10px;
+        -o-transition:all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+        -webkit-font-smoothing: antialiased;
+  
+        &:hover {
+          background-color: #a1725d;
+        }
+      }
+    
+      &__icon span {
+        color:$main-text-color;
+        position:absolute;
+        font-family:sans-serif;
+        bottom:0;
+        left:-25px;
+        right:-25px;
+        padding:5px 7px;
+        z-index: 10000;
+        font-size:14px;
+        border-radius:2px;
+        background:#fff;
+        visibility:hidden;
+        opacity:0;
+        -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+        &::before {
+          content:'';
+          width: 0; 
+          height: 0; 
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #fff;
+          position:absolute;
+          bottom:-5px;
+          left:40px;
+        }
+      }
+  
+      &__icon:hover span {
+        bottom:50px;
+        visibility:visible;
+        opacity:1;
+      }
+    }
+  }
+}
+
+.icon--facebook {
+  background-image: url(../images/icons/icon-facebook.png);
+}
+
+.icon--insta {
+  background-image: url(../images/icons/icon-instagram.png);
+}
+
+.icon--telegram {
+  background-image: url(../images/icons/icon-telegram.png);
+}

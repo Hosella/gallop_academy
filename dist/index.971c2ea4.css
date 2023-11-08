@@ -37,12 +37,14 @@ h4 {
 }
 
 .our-teachers__container__text {
+  font-family: Merriweather;
   font-size: 15px;
   font-weight: 600;
   line-height: 19.5px;
 }
 
-.classes__container__text, .teacher__achievements {
+.footer__button, .classes__container__text, .teacher__achievements {
+  font-family: Merriweather;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -981,10 +983,346 @@ h4 {
 }
 
 .map {
+  padding-block: 20px;
   background-color: #ebc6c3;
   justify-content: center;
-  padding-block: 20px;
+  padding-bottom: 110px;
   display: flex;
+}
+
+.footer {
+  background-color: #2c2e2d;
+  border-start-start-radius: 100px;
+  width: 100%;
+  margin-top: -90px;
+  padding-top: 20px;
+}
+
+.footer__content {
+  --columns: 2;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 20px;
+  display: grid;
+}
+
+@media (width >= 640px) {
+  .footer__content {
+    --columns: 6;
+    column-gap: 24px;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__content {
+    --columns: 12;
+  }
+}
+
+.footer__title {
+  color: #fff4e6;
+  grid-column: 1 / -1;
+}
+
+@media (width >= 640px) {
+  .footer__title {
+    grid-column: 1 / 5;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__title {
+    grid-column: 1 / 6;
+  }
+}
+
+.footer__form {
+  grid-column: 1 / -1;
+  padding: 0 10px 10px;
+}
+
+@media (width >= 640px) {
+  .footer__form {
+    grid-column: 1 / 5;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__form {
+    grid-column: 1 / 6;
+  }
+}
+
+.footer__field {
+  width: 100%;
+  height: 44px;
+  padding-block: 30px;
+  line-height: 44px;
+  position: relative;
+}
+
+.footer__label {
+  z-index: 1000;
+  color: #fff4e6;
+  opacity: .7;
+  cursor: text;
+  width: 100%;
+  transition: all .4s;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.footer__input {
+  opacity: .7;
+  box-shadow: none;
+  color: #fff4e6;
+  background-color: #2c2e2d;
+  border: 0;
+  border-bottom: 3px solid #fff4e6;
+  outline: 0;
+  width: 100%;
+  padding: .5rem 0;
+}
+
+.footer__input:focus, .footer__input:valid {
+  opacity: 1;
+  border-color: #fff4e6;
+}
+
+.footer__input:focus ~ label, .footer__input:valid ~ label {
+  opacity: 1;
+  font-size: 14px;
+  top: 7px;
+}
+
+.footer__button {
+  color: #fff4e6;
+  background-color: #7b5443;
+  border: 0;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  margin-top: 50px;
+  text-decoration: none;
+  display: flex;
+}
+
+.footer__button:hover {
+  background-color: #6e4b3c;
+  box-shadow: 1px 1px 40px #777;
+}
+
+.footer__menu {
+  grid-column: 1 / -1;
+  margin-block: 20px;
+}
+
+@media (width >= 1024px) {
+  .footer__menu {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+  }
+}
+
+.footer__logo {
+  height: 28px;
+  margin: 20px 0;
+  display: flex;
+}
+
+@media (width >= 1024px) {
+  .footer__logo {
+    height: 40px;
+  }
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (width >= 640px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+@media (width >= 1024px) {
+  .footer__list {
+    gap: 25px;
+  }
+}
+
+.footer__item {
+  margin-block: 10px;
+}
+
+.footer__link {
+  color: #fff4e6;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  font-weight: bold;
+}
+
+.contact-us {
+  grid-column: 1 / -1;
+  margin-block: 80px;
+}
+
+@media (width >= 640px) {
+  .contact-us {
+    grid-column: 1 / 5;
+  }
+}
+
+@media (width >= 1024px) {
+  .contact-us {
+    grid-column: 8 / -1;
+    margin-block: 50px;
+  }
+}
+
+.contact-us__title {
+  text-align: left;
+  color: #fff4e6;
+}
+
+@media (width >= 1024px) {
+  .contact-us__title {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-us__paragraph {
+  color: #fff4e6;
+  opacity: .7;
+  margin: 15px 0 0;
+}
+
+@media (width >= 1024px) {
+  .contact-us__paragraph {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-us__phone-number {
+  color: #fff4e6;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+.contact-us__phone-number:after {
+  content: "";
+  background-color: #fff4e6;
+  width: 100%;
+  height: 1px;
+  transition: all .3s;
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  transform: scale(0);
+}
+
+.contact-us__phone-number:hover:after {
+  transform: scale(1);
+}
+
+.contact-us__socials {
+  height: 30px;
+  position: relative;
+}
+
+.contact-us__socials__icons {
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+@media (width >= 1024px) {
+  .contact-us__socials__icons {
+    top: 80%;
+  }
+}
+
+.contact-us__socials__icons__icon {
+  text-align: center;
+  -o-transition: all .5s;
+  -webkit-font-smoothing: antialiased;
+  background: #7b5443 0 0 / contain;
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  padding-top: 12px;
+  font-family: fontawesome;
+  text-decoration: none;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.contact-us__socials__icons__icon:hover {
+  background-color: #a1725d;
+}
+
+.contact-us__socials__icons__icon span {
+  color: #2c2e2d;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  -o-transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+  background: #fff;
+  border-radius: 2px;
+  padding: 5px 7px;
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: all .5s cubic-bezier(.68, -.55, .265, 1.55);
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+}
+
+.contact-us__socials__icons__icon span:before {
+  content: "";
+  border-top: 5px solid #fff;
+  border-left: 5px solid #0000;
+  border-right: 5px solid #0000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+.contact-us__socials__icons__icon:hover span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+.icon--facebook {
+  background-image: url("icon-facebook.c8184ae2.png");
+}
+
+.icon--insta {
+  background-image: url("icon-instagram.aff70f09.png");
+}
+
+.icon--telegram {
+  background-image: url("icon-telegram.e0306494.png");
 }
 
 ::-webkit-scrollbar {
@@ -1027,9 +1365,9 @@ a {
 }
 
 .container {
+  padding: 20px;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 20px;
   padding-block: 0;
 }
 

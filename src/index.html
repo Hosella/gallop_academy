@@ -41,7 +41,7 @@
             </nav>
             
             
-            <a href="#" class="top__contact-us">Contact us</a>
+            <a href="#contact-us" class="top__contact-us">Contact us</a>
         </div>
       </div>
   
@@ -107,11 +107,11 @@
             <li class="menu__item">
               <a href="#classes" class="menu__link">Classes</a>
             </li>
-            <li class="nav__item">
+            <li class="menu__item">
               <a href="#map" class="menu__link">Where we are?</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="menu__link">Contacts</a>
+            <li class="menu__item">
+              <a href="#contact-us" class="menu__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -239,6 +239,73 @@
      ></iframe>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <h3 class="footer__title">Send us a message</h3>
+        <form action="" class="footer__form">
+          <div class="footer__field">
+            <input type="text" class="footer__input" id="email" required>
+            <label for="email" class="footer__label">Your email:</label>
+          </div>
+    
+          <div class="footer__field">
+            <input type="text" class="footer__input" id="name" required>
+            <label for="name" class="footer__label">Your name:</label>
+          </div>
+    
+          <div class="footer__field">
+            <input type="text" class="footer__input" id="message" required>
+            <label for="message" class="footer__label">Your message:</label>
+          </div>
+
+          <button type="submit" class="footer__button">Send</button>
+        </form>
+
+        <section class="contact-us" id="contact-us">
+          <h3 class="contact-us__title">Contact us</h3>
+          
+          <p class="contact-us__paragraph">Call us</p>
+          <a href="tel:545545654" class="contact-us__phone-number">545 545 654</a>
+
+          <div class="contact-us__socials">
+            <p class="contact-us__paragraph">Our socials</p>
+            <div class="contact-us__socials__icons">
+              <a href="https://www.facebook.com/" class="contact-us__socials__icons__icon icon--facebook"><span>Facebook</span></a>
+              <a href="https://www.instagram.com/" class="contact-us__socials__icons__icon icon--insta"><span>Instagram</span></a>
+              <a href="https://web.telegram.org/" class="contact-us__socials__icons__icon icon--telegram"><span>Telegram</span></a>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer__menu">
+          <a href="#" class="footer__logo">
+            <img src="images/logo_black.png" alt="logo">
+          </a>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#about-us" class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#our-teachers" class="footer__link">Our teachers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#classes" class="footer__link">Classes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#map" class="footer__link">Where we are?</a>
+              </li>
+              <li class="footer__item">
+                <a href="#contact-us" class="footer__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script/main.js"></script>
 </body>
