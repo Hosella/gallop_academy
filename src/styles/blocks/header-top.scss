@@ -33,6 +33,7 @@
       font-size: 13px;
       line-height: 19.5px;
       text-transform: uppercase;
+      transition: padding-bottom $transition;
 
       &:hover {
         border-bottom: 2px solid $brown-color;

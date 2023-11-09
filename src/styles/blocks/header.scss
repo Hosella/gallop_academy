@@ -43,6 +43,8 @@
     object-position: center;
     object-fit: cover;
     border-end-start-radius: 100px;
+    border: 2px solid $main-text-color;
+    border-right: none;
     position: absolute;
 
     @include onTablet {
