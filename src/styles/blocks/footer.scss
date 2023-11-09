@@ -189,12 +189,12 @@
     }
 
     @include onDesktop {
-      gap: 25px;
+      gap: 64px;
     }
   }
 
   &__item {
-    margin-block: 10px;
+    margin-block: 24px;
   }
   
   &__link {
