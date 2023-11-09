@@ -1066,13 +1066,15 @@ h4 {
   opacity: .7;
   cursor: text;
   width: 100%;
+  font-size: 14px;
   transition: all .4s;
   position: absolute;
-  top: 25px;
+  top: 7px;
   left: 0;
 }
 
 .footer__input {
+  resize: none;
   opacity: .7;
   box-shadow: none;
   color: #fff4e6;
@@ -1084,15 +1086,13 @@ h4 {
   padding: .5rem 0;
 }
 
-.footer__input:focus, .footer__input:valid {
+.footer__input:focus {
   opacity: 1;
   border-color: #fff4e6;
 }
 
-.footer__input:focus ~ label, .footer__input:valid ~ label {
+.footer__input:focus ~ label {
   opacity: 1;
-  font-size: 14px;
-  top: 7px;
 }
 
 .footer__button {

@@ -47,8 +47,9 @@
   &__label {
     position: absolute;
     z-index: 1000;
-    top: 25px;
     left: 0px;
+    font-size: 14px;
+    top: 7px;
     width: 100%;
     color: $white-page-color;
     opacity: 0.7;
@@ -57,6 +58,7 @@
   }
 
   &__input {
+    resize: none;
     background-color: $main-text-color;;
     width: 100%;
     border: 0;
@@ -67,16 +69,12 @@
     box-shadow: none;
     color: $white-page-color;
 
-    &:focus,
-    &:valid {
+    &:focus {
       border-color: $white-page-color;
       opacity: 1;
     } 
 
-    &:focus~label,
-    &:valid~label {
-      font-size: 14px;
-      top: 7px;
+    &:focus~label {
       opacity: 1;
     }
   }

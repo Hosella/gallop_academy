@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Gallop Academy</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body id="body">
@@ -95,7 +96,7 @@
         </div>
       </div>
   
-      <div class="main__bottom">
+      <div class="menu__bottom">
         <nav class="menu__nav">
           <ul class="menu__list">
             <li class="menu__item">
@@ -120,8 +121,8 @@
   </menu>
 
   <main class="main">
-      <div class="about-us">
-        <section class="about-us__container container" id="about-us">
+      <div class="about-us" id="about-us">
+        <section class="about-us__container container">
           <div class="about-us__container__texts">
             <h3 class="about-us__container__title">About our school</h3>
       
@@ -132,8 +133,8 @@
         </section>
       </div>
     
-      <div class="our-teachers">
-        <section class="our-teachers__container container" id="our-teachers">
+      <div class="our-teachers" id="our-teachers">
+        <section class="our-teachers__container container">
           <div class="our-teachers__container__texts">
             <h3 class="our-teachers__container__title">Teachers</h3>
     
@@ -194,8 +195,8 @@
         </section>
       </div>
 
-      <div class="classes">
-        <section class="classes__container container" id="classes">
+      <div class="classes" id="classes">
+        <section class="classes__container container">
           <h2 class="classes__container__title">Classes</h2>
           <p class="classes__container__text">
             We have four classes that give students the opportunity to choose the area that interests them most and meets their needs and goals.
@@ -245,17 +246,17 @@
         <h3 class="footer__title">Send us a message</h3>
         <form action="" class="footer__form">
           <div class="footer__field">
-            <input type="text" class="footer__input" id="email" required>
+            <input type="email" name="email" class="footer__input" id="email" required>
             <label for="email" class="footer__label">Your email:</label>
           </div>
     
           <div class="footer__field">
-            <input type="text" class="footer__input" id="name" required>
+            <input type="text" name="name" class="footer__input" id="name" required>
             <label for="name" class="footer__label">Your name:</label>
           </div>
     
           <div class="footer__field">
-            <input type="text" class="footer__input" id="message" required>
+            <textarea name="message" id="message" class="footer__input" cols="30" rows="3"></textarea>
             <label for="message" class="footer__label">Your message:</label>
           </div>
 
