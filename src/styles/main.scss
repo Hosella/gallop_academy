@@ -16,7 +16,7 @@
 
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -42,6 +42,8 @@ body {
   background: $white-page-color;
   font-family: 'Merriweather';
   color: $main-text-color;
+
+  overflow-x: hidden;
 }
 
 .body-hidden {
@@ -49,6 +51,8 @@ body {
 }
 
 a {
+  color: inherit;
+  text-decoration: none;
   padding: 0;
   margin: 0;
   height: min-content;
@@ -70,3 +74,20 @@ a {
     padding-block: 0;
   }
 }
+
+.block {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  transition: all 1s;
+  
+  &--left {
+    left: -60px;
+  }
+
+  &--right {
+    left: 60px;
+  }
+}
+
+// button

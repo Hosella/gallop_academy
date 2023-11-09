@@ -3,18 +3,22 @@
   width: 100%;
   margin-top: -90px;
   border-start-start-radius: 100px;
-  padding-top: 20px;
   
   &__content {
     @include pageGrid;
   }
   
   &__title {
+    text-align: left;
     color: $white-page-color;
     grid-column: 1 / -1;
+    margin-bottom: 48px;
+    margin-top: 72px;
 
     @include onTablet {
       grid-column: 1 / 5;
+      margin-bottom: 56px;
+      margin-top: 130px;
     }
 
     @include onDesktop {
@@ -33,7 +37,15 @@
 
     @include onDesktop {
       grid-column: 1 / 6;
+      margin-bottom: 100px;
     }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 20px;
   }
   
   &__field {
@@ -48,8 +60,8 @@
     position: absolute;
     z-index: 1000;
     left: 0px;
-    font-size: 14px;
-    top: 7px;
+    font-size: 16px;
+    top: 0;
     width: 100%;
     color: $white-page-color;
     opacity: 0.7;
@@ -68,6 +80,7 @@
     opacity: 0.7;
     box-shadow: none;
     color: $white-page-color;
+    font-size: 16px;
 
     &:focus {
       border-color: $white-page-color;
@@ -80,22 +93,63 @@
   }
 
   &__button {
-    height: 56px;
-    margin-top: 50px;
-    width: 100%;
-    background-color: $brown-color;
-    color: $white-page-color;
-    @extend %p2;
-    border: 0;
-    border-radius: 8px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    background: none;
+    border: none;
+    width: max-content;
+    margin-top: 90px;
+    position: relative;
+    transition: all .2s ease;
+    
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -64%;
+      left: -6px;
+      display: block;
+      border-radius: 28px;
+      background: rgba($brown-color, 0.8);
+      width: 56px;
+      height: 56px;
+      transition: all .3s ease;
+    }
+  
+    span {
+      color: $white-page-color;
+      position: relative;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  
+    svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: $white-page-color;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all .3s ease;
+    }
+  
     &:hover {
-      background-color: #6e4b3c;
-      box-shadow: 1px 1px 40px #777777;
+      &:before {
+        width: 110%;
+        background: rgba($brown-color, 1);
+      }
+  
+      svg {
+        transform: translateX(0);
+      }
+    }
+  
+    &:active {
+      transform: scale(.96);
     }
   }
 
@@ -145,9 +199,11 @@
     padding: 3px;
     text-decoration: none;
     color: $white-page-color;
+    transition: padding-bottom $transition;
 
     &:hover {
-      font-weight: bold;
+      border-bottom: 2px solid $white-page-color;
+      padding-bottom: 8px;
     }
   }
 }

@@ -59,25 +59,65 @@
     }
   }
 
-  &__button {
-    height: 50px;
-    width: 100%;
-    background-color: $brown-color;
-    color: $white-page-color;
-    border-radius: 8px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header__button {
+    width: max-content;
+    position: relative;
+    transition: all .2s ease;
     grid-column: 1 / -1;
-
+  
     @include onTablet {
       grid-column: 1 / 4;
     }
-
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: -120%;
+      left: -10px;
+      display: block;
+      border-radius: 28px;
+      background: rgba($brown-color, 0.8);
+      width: 56px;
+      height: 56px;
+      transition: all .3s ease;
+    }
+  
+    span {
+      color: $white-page-color;
+      position: relative;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  
+    svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: $white-page-color;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all .3s ease;
+    }
+  
     &:hover {
-      background-color: #6e4b3c;
-      box-shadow: 1px 1px 40px #777777;
+      &:before {
+        width: 110%;
+        background: rgba($brown-color, 1);
+      }
+  
+      svg {
+        transform: translateX(0);
+      }
+    }
+  
+    &:active {
+      transform: scale(.96);
     }
   }
 }

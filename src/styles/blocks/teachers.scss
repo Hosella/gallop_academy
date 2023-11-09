@@ -37,9 +37,15 @@
   border: 3px solid $header-bg-color;
   border-radius: 16px;
   grid-column: 1 / -1;
+  transition: $transition;
 
   @include onDesktop {
     grid-column: span 4;
+  }
+
+  &:hover {
+    border-color: $brown-color;
+    transition: $transition;
   }
 
   &:hover &__photo-wraper {

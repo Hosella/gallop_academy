@@ -33,9 +33,11 @@
   &__link {
     text-decoration: none;
     color: $white-page-color;
+    transition: padding-bottom $transition;
 
-    &:hover {
-      font-weight: bold;
-    }
+      &:hover {
+        border-bottom: 2px solid $white-page-color;
+        padding-bottom: 8px;
+      }
   }
 }
