@@ -1334,7 +1334,6 @@ h4 {
 
 .contact-us__phone-number {
   color: #fff4e6;
-  width: max-content;
   margin-bottom: 40px;
   font-weight: bold;
   text-decoration: none;
@@ -1345,7 +1344,8 @@ h4 {
 .contact-us__phone-number:after {
   content: "";
   background-color: #fff4e6;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 1px;
   transition: all .3s;
   display: block;
@@ -1516,4 +1516,4 @@ a {
   top: 40px;
 }
 
-/*# sourceMappingURL=index.971c2ea4.css.map */
+/*# sourceMappingURL=index.5525e4b8.css.map */

@@ -35,12 +35,13 @@
   }
 
   &__phone-number {
+    position: relative;
     text-decoration: none;
     color: $white-page-color;
     font-weight: bold;
-    position: relative;
     display: block;
     margin-bottom: 40px;
+    width: max-content;
 
     &::after {
       content: '';
@@ -48,7 +49,7 @@
       position: absolute;
       bottom: -8px;
       height: 1px;
-      width: fit-content;
+      width: 100%;
       background-color: $white-page-color;
       transition: 0.3s;
       transform: scale(0);

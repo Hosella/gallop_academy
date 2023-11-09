@@ -80,10 +80,10 @@ const handleIntersection = (entries) => {
     console.log(classList)
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
-      entry.target.style.left = 0;
+      entry.target.style.top = 0;
     } else {
       entry.target.style.opacity = 0;
-      entry.target.style.left = classList.contains('block--left') ? '-60px': '60px';
+      entry.target.style.top = classList.contains('block--left') ? '-40px': '40px';
     }
   });
 };

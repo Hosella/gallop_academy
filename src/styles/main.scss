@@ -37,10 +37,6 @@
   scroll-behavior: smooth;
 }
 
-// html {
-//   overflow-x: hidden;
-// }
-
 body {
   margin: 0;
   background: $white-page-color;
@@ -66,7 +62,6 @@ a {
   padding-block: 0;
   max-width: 1240px;
   margin: 0 auto;
-  overflow: hidden;
 
   @include onTablet {
     padding: 41px;
@@ -84,11 +79,11 @@ a {
   opacity: 0;
   transition: all 1s;
   
-  &--left {
-    left: -60px;
+  &--up {
+    top: -40px;
   }
 
-  &--right {
-    left: 60px;
+  &--down {
+    top: 40px;
   }
 }
