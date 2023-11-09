@@ -1,8 +1,10 @@
 .footer {
+  position: relative;
   background-color: $main-text-color;
   width: 100%;
   margin-top: -90px;
   border-start-start-radius: 100px;
+  z-index: 1;
   
   &__content {
     @include pageGrid;
