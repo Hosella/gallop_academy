@@ -16,6 +16,9 @@
     "parcel": "^2.10.1"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.1"
+    "@parcel/transformer-sass": "^2.10.1",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }
