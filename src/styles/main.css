@@ -1334,12 +1334,15 @@ h4 {
   scroll-behavior: smooth;
 }
 
+html, body {
+  max-width: 100vw;
+}
+
 body {
   margin: 0;
   background: #fff4e6;
   font-family: "Merriweather";
   color: #2c2e2d;
-  overflow-x: hidden;
 }
 
 .body-hidden {
