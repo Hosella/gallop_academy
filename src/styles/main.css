@@ -91,10 +91,12 @@ h4 {
   border-end-start-radius: 100px;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 @media (min-width: 640px) {
   .header__slideshow {
     height: 360px;
+    right: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -102,7 +104,6 @@ h4 {
     height: 85%;
     width: 50%;
     left: 50%;
-    right: 0;
   }
 }
 
