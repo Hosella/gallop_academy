@@ -237,6 +237,7 @@ h4 {
   align-items: center;
 }
 .top__logo {
+  width: 100px;
   display: flex;
   margin: 20px 0;
   height: 28px;
