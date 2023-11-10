@@ -37,12 +37,19 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background-color: red;
+}
+
 body {
   margin: 0;
   background: $white-page-color;
   font-family: 'Merriweather';
   color: $main-text-color;
   overflow-x: hidden;
+
+
+  background-color: green;
 }
 
 .body-hidden {
@@ -62,7 +69,6 @@ a {
   padding-block: 0;
   max-width: 1240px;
   margin: 0 auto;
-  overflow: hidden;
 
   @include onTablet {
     padding: 41px;
