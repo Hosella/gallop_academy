@@ -10,17 +10,18 @@
 
   
   &__slideshow {
-    width: 100%;
     height: 390px;
     margin: 0;
     border-end-start-radius: 100px;
     position: absolute;
     bottom: 0;
     right: 0;
+    left: 0;
 
     @include onTablet {
       height: 360px;
       right: 0;
+      left: 0;
     }
 
     @include onDesktop {
