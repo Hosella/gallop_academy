@@ -37,19 +37,12 @@
   scroll-behavior: smooth;
 }
 
-html {
-  background-color: red;
-}
-
 body {
   margin: 0;
   background: $white-page-color;
   font-family: 'Merriweather';
   color: $main-text-color;
   overflow-x: hidden;
-
-
-  background-color: green;
 }
 
 .body-hidden {
