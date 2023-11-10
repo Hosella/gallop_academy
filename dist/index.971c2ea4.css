@@ -266,7 +266,7 @@ h4 {
   }
 }
 
-#top__icon {
+#top__btn-menu {
   z-index: 1000;
   -o-transition: .5s ease-in-out;
   cursor: pointer;
@@ -279,12 +279,12 @@ h4 {
 }
 
 @media (width >= 1024px) {
-  #top__icon {
+  #top__btn-menu {
     display: none;
   }
 }
 
-#top__icon span {
+#top__btn-menu span {
   opacity: 1;
   -o-transition: .25s ease-in-out;
   background: #2c2e2d;
@@ -298,33 +298,33 @@ h4 {
   transform: rotate(0);
 }
 
-#top__icon span:first-child {
+#top__btn-menu span:first-child {
   transform-origin: 0;
   top: 0;
 }
 
-#top__icon span:nth-child(2) {
+#top__btn-menu span:nth-child(2) {
   transform-origin: 0;
   top: 10px;
 }
 
-#top__icon span:nth-child(3) {
+#top__btn-menu span:nth-child(3) {
   transform-origin: 0;
   top: 20px;
 }
 
-#top__icon.open span:first-child {
+#top__btn-menu.open span:first-child {
   top: -3px;
   left: 8px;
   transform: rotate(45deg);
 }
 
-#top__icon.open span:nth-child(2) {
+#top__btn-menu.open span:nth-child(2) {
   opacity: 0;
   width: 0%;
 }
 
-#top__icon.open span:nth-child(3) {
+#top__btn-menu.open span:nth-child(3) {
   top: 19px;
   left: 8px;
   transform: rotate(-45deg);

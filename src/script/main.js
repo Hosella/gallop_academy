@@ -27,20 +27,19 @@ function showSlides(n) {
 }
 
 //btn menu
-const bntMenu = document.getElementById('top__icon');
+const bntMenu = document.getElementById('top__btn-menu');
 const body = document.getElementById('body');
-const nav_icon = document.getElementById('top__icon');
 const menu = document.getElementById('menu');
 
 const handleMenu = () => {
   const isHidden = body.matches('.body-hidden');
   if (isHidden) {
     body.classList.remove('body-hidden');
-    nav_icon.classList.remove('open');
+    bntMenu.classList.remove('open');
     menu.classList.remove('page__menu--open');
   } else {
     body.classList.add('body-hidden');
-    nav_icon.classList.add('open');
+    bntMenu.classList.add('open');
     menu.classList.add('page__menu--open');
   }
 };
@@ -51,7 +50,7 @@ links?.forEach((link) => {
   link.addEventListener('click', () => {
     body.classList.remove('body-hidden');
     menu.classList.remove('page__menu--open');
-    nav_icon.classList.remove('open');
+    bntMenu.classList.remove('open');
   })
 });
 
@@ -59,7 +58,7 @@ const logo = document.getElementById('logo');
 logo.addEventListener('click', () => {
   body.classList.remove('body-hidden');
   menu.classList.remove('page__menu--open');
-  nav_icon.classList.remove('open');
+  bntMenu.classList.remove('open');
 })
 
 // animation block
