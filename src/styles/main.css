@@ -1362,6 +1362,18 @@ a {
   height: min-content;
 }
 
+section {
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid blue;
+}
+
+html {
+  border: 1px solid green;
+}
+
 .container {
   padding: 20px;
   padding-block: 0;
