@@ -62,33 +62,33 @@
 // })
 
 // // animation block
-// const blocks = document.querySelectorAll('.block');
+const blocks = document.querySelectorAll('.block');
 
-// const options = {
-//   root: null,
-//   rootMargin: '0px',
-//   threshold: 0.1
-// };
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
 
-// const handleIntersection = (entries) => {
-//   entries.forEach(entry => {
-//     const {classList} = entry.target;
-//     if (!classList) {
-//       return;
-//     }
-//     console.log(classList)
-//     if (entry.isIntersecting) {
-//       entry.target.style.opacity = 1;
-//       entry.target.style.top = 0;
-//     } else {
-//       entry.target.style.opacity = 0;
-//       entry.target.style.top = classList.contains('block--left') ? '-40px': '40px';
-//     }
-//   });
-// };
+const handleIntersection = (entries) => {
+  entries.forEach(entry => {
+    const {classList} = entry.target;
+    if (!classList) {
+      return;
+    }
+    console.log(classList)
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.top = 0;
+    } else {
+      entry.target.style.opacity = 0;
+      entry.target.style.top = classList.contains('block--left') ? '-40px': '40px';
+    }
+  });
+};
 
-// const observer = new IntersectionObserver(handleIntersection, options);
+const observer = new IntersectionObserver(handleIntersection, options);
 
-// blocks.forEach(block => {
-//   observer.observe(block);
-// });
+blocks.forEach(block => {
+  observer.observe(block);
+});
