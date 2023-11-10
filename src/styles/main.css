@@ -230,6 +230,7 @@ h4 {
   }
 }
 .top__images {
+  max-width: 160px;
   position: relative;
   display: flex;
   gap: 32px;
