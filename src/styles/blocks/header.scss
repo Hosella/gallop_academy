@@ -1,14 +1,13 @@
 .header {
-  
   position: relative;
   height: 893px;
   background-color: $header-bg-color;
   border-end-start-radius: 100px;
+
   @include onDesktop {
     height: 800px;
   }
 
-  
   &__slideshow {
     height: 390px;
     margin: 0;

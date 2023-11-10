@@ -15,7 +15,8 @@
 
 
   &__images {
-    // position: relative;
+    max-width: 145px;
+    position: relative;
     display: flex;
     gap: 32px;
     align-items: center;
