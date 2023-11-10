@@ -62,6 +62,7 @@ a {
   padding-block: 0;
   max-width: 1240px;
   margin: 0 auto;
+  overflow: hidden;
 
   @include onTablet {
     padding: 41px;

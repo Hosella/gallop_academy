@@ -1268,12 +1268,12 @@ h4 {
 
 @media (width >= 1024px) {
   .footer__list {
-    gap: 25px;
+    gap: 64px;
   }
 }
 
 .footer__item {
-  margin-block: 10px;
+  margin-block: 24px;
 }
 
 .footer__link {
